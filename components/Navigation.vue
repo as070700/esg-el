@@ -4,9 +4,9 @@
 <template>
   <nav>
     <NuxtLink to="/">Start</NuxtLink> |
-    <NuxtLink to="/leistungen">Leistungen</NuxtLink> |
-    <NuxtLink to="/buchen">Termin buchen</NuxtLink> |
-    <NuxtLink to="/kontakt">Kontakt</NuxtLink>
+    <NuxtLink to="/services">Leistungen</NuxtLink> |
+    <NuxtLink to="/booking">Termin buchen</NuxtLink> |
+    <NuxtLink to="/contact">Kontakt</NuxtLink>
   </nav>
 </template>
 
