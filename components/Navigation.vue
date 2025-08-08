@@ -1,0 +1,28 @@
+// ----------------------------
+// Datei: components/Navigation.vue
+// ----------------------------
+<template>
+  <nav>
+    <NuxtLink to="/">Start</NuxtLink> |
+    <NuxtLink to="/leistungen">Leistungen</NuxtLink> |
+    <NuxtLink to="/buchen">Termin buchen</NuxtLink> |
+    <NuxtLink to="/kontakt">Kontakt</NuxtLink>
+  </nav>
+</template>
+
+<style scoped>
+nav {
+  padding: 1rem;
+  background: #f0f0f0;
+  text-align: center;
+}
+a {
+  margin: 0 0.5rem;
+  text-decoration: none;
+  color: #333;
+}
+a:hover {
+  text-decoration: underline;
+}
+</style>
+
