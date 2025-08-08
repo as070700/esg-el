@@ -10,14 +10,5 @@
 
 <style scoped>
 
-.h1 {
-  font-size: 2rem;
-  margin-bottom: 10px;
-}
-
-p {
-  font-size: 1rem;
-  color: #666;
-}
 
 </style>

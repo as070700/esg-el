@@ -1,0 +1,32 @@
+body {
+  font-family: 'DM Sans', sans-serif;
+}
+
+h1 {
+  font-size: 2rem;
+  color: #333;
+}
+
+h2 {
+  font-size: 1.5rem;
+  color: #444;
+}
+
+h3 {
+  font-size: 1.25rem;
+  color: #555;
+}
+
+p {
+  font-size: 1rem;
+  color: #666;
+}
+
+a {
+  color: #008CBA;
+  text-decoration: none;
+}
+
+li {
+  margin-bottom: 0.5rem;
+}
