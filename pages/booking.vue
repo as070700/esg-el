@@ -5,12 +5,12 @@
   <div>
     <h1>Termin buchen</h1>
     <form @submit.prevent="senden">
-      <input type="text" v-model="name" placeholder="Name" required />
-      <input type="email" v-model="email" placeholder="E-Mail" required />
-      <input type="date" v-model="date" required />
-      <button class="buchungs-button" type="submit">Absenden</button>
+      <input class="booking-input" type="text" v-model="name" placeholder="Name" required />
+      <input class="booking-input" type="email" v-model="email" placeholder="E-Mail" required />
+      <input class="booking-input" type="date" v-model="date" required />
+      <button class="booking-button" type="submit">Absenden</button>
     </form>
-    <p v-if="success">Vielen Dank! Wir melden uns in Kürze.</p>
+    <p class="success-message" v-if="success">Vielen Dank! Wir melden uns in Kürze.</p>
   </div>
 </template>
 
@@ -33,7 +33,22 @@ const senden = async () => {
 </script>
 
 <style scoped>
-.buchungs-button {
+
+.booking-input {
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  padding: 10px;
+  margin-bottom: 10px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.success-message {
+  color: green;
+  margin-top: 10px;
+}
+
+.booking-button {
   background-color: #008CBA;
   color: white;
   padding: 10px 20px;
@@ -42,7 +57,7 @@ const senden = async () => {
   font-size: 1rem;
   cursor: pointer;
 }
-.buchungs-button:hover {
+.booking-button:hover {
   background-color: #005f73;
 }
 </style>
