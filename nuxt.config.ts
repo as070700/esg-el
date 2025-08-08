@@ -6,6 +6,10 @@ export default defineNuxtConfig({
     '/': { prerender: true },
   },
 
+  css: [
+    '@/assets/css/global.css'
+  ],
+
   app: {
     head: {
       link: [
