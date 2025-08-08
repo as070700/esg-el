@@ -7,7 +7,7 @@
     <form @submit.prevent="senden">
       <input class="booking-input" type="text" v-model="name" placeholder="Name" required />
       <input class="booking-input" type="email" v-model="email" placeholder="E-Mail" required />
-      <input class="booking-input" type="date" v-model="date" required />
+      <input class="booking-input" type="date" placeholder="TT.MM.JJJJ" v-model="date" required />
       <button class="booking-button" type="submit">Absenden</button>
     </form>
     <p class="success-message" v-if="success">Vielen Dank! Wir melden uns in Kürze.</p>
