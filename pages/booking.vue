@@ -15,9 +15,9 @@
 </template>
 
 <script setup>
-import { userBookingForm } from '~/composables/userBookingForm.js'
+import { useBookingForm } from '~/composables/useBookingForm.js'
 
-const { name, email, date, success, senden } = userBookingForm()
+const { name, email, date, success, senden } = useBookingForm()
 </script>
 
 <style scoped>
