@@ -6,9 +6,9 @@
     <p>&copy; 2025 ESG - einfach, schnell und günstig</p>
     <p>Alle Rechte vorbehalten.</p>
     <div class="footer-links">
-      <p>Kontakt: <a href="mailto:info@esg-el.de">info@esg-el.de</a></p>
-      <p>Impressum: <a href="/legalnotice">Impressum</a></p>
-      <p>Datenschutz: <a href="/privacypolicy">Datenschutz</a></p>
+      <p>Kontakt: <a href="mailto:info@esg-el.de">info@esg-el.de</a> | </p>
+      <p>Impressum: <a href="/legalnotice">Impressum</a> | </p>
+      <p>Datenschutz: <a href="/privacypolicy">Datenschutz</a> | </p>
       <p>AGB: <a href="/agb">AGB</a></p>
     </div>
   </footer>
@@ -24,6 +24,7 @@ footer {
 
 .footer-links {
   margin-top: 1rem;
+  text-align: center;
   display: flex;
   flex-direction: row;
   align-items: center;
