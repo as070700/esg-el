@@ -16,9 +16,9 @@
 </template>
 
 <script setup>
-import { useKontaktForm } from '~/composables/useKontaktForm.js'
+import { useContactForm } from '~/composables/useContactForm.js'
 
-const { name, email, nachricht, erfolg, senden } = useKontaktForm()
+const { name, email, nachricht, erfolg, senden } = useContactForm()
 </script>
 
 <style scoped>
