@@ -15,21 +15,9 @@
 </template>
 
 <script setup>
-import { ref } from 'vue'
+import { userBookingForm } from '~/composables/userBookingForm.js'
 
-const name = ref('')
-const email = ref('')
-const date = ref('')
-const success = ref(false)
-
-const senden = async () => {
-  await fetch('https://formsubmit.co/ajax/info@esg-el.de', {
-    method: 'POST',
-    headers: { 'Content-Type': 'application/json' },
-    body: JSON.stringify({ name: name.value, email: email.value, date: date.value })
-  })
-  success.value = true
-}
+const { name, email, date, success, senden } = userBookingForm()
 </script>
 
 <style scoped>

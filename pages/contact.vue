@@ -16,21 +16,9 @@
 </template>
 
 <script setup>
-import { ref } from 'vue'
+import { useKontaktForm } from '~/composables/useKontaktForm.js'
 
-const name = ref('')
-const email = ref('')
-const nachricht = ref('')
-const erfolg = ref(false)
-
-const senden = async () => {
-  await fetch('https://formsubmit.co/ajax/info@esg-el.de', {
-    method: 'POST',
-    headers: { 'Content-Type': 'application/json' },
-    body: JSON.stringify({ name: name.value, email: email.value, nachricht: nachricht.value })
-  })
-  erfolg.value = true
-}
+const { name, email, nachricht, erfolg, senden } = useKontaktForm()
 </script>
 
 <style scoped>
