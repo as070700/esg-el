@@ -13,7 +13,7 @@
 <style scoped>
 nav {
   padding: 1rem;
-  background: #f0f0f0;
+  background: #7d7373;
   text-align: center;
 }
 a {

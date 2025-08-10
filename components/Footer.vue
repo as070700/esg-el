@@ -25,7 +25,7 @@ footer {
 .footer-links {
   margin-top: 1rem;
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   align-items: center;
 }
 </style>
