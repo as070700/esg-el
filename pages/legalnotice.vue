@@ -11,7 +11,7 @@
     A S<br>
     </p><p><strong>Kontakt:</strong> <br>
     Telefon: 0151-56242891<br>
-    E-Mail: <a href='mailto:info@esg-el.de'>info@esg-el.de</a></br></p><p><strong>Umsatzsteuer-ID: </strong> <br>
+    E-Mail: <a href='mailto:info@esg-el.de'>info@esg-el.de</a><br></p><p><strong>Umsatzsteuer-ID: </strong> <br>
     Umsatzsteuer-Identifikationsnummer gemäß §27a Umsatzsteuergesetz: -<br><br>
     <strong>Wirtschafts-ID: </strong><br>
     -<br>
