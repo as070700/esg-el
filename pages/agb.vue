@@ -32,27 +32,7 @@
     </br>
     <h2>Vertragspartner</h2>
     <p>Der Kaufvertrag wird mit <b></b> abgeschlossen.
-
-        <b></b>
-        <b></b>
-        <b></b>
-        <b></b>
-        <b></b>
-        <b></b>
-        <b></b>
-        <b></b>
-        <b></b>
-        <b></b>
-        <b></b>
-        <b></b>
-        <b></b>
-        <b>Sonstiges</b>
-        <b></b>
-        <b></b>
-        <b></b>.
-
-
-
+        <b>Sonstiges.</b>
     </p>
     <ul>
     <li><b>EL</b></li>
@@ -61,15 +41,7 @@
     <li><b>34225</b></li>
     <li><b>Baunatal</b></li>
         <li>
-            <b></b>
-            <b></b>
-            <b></b>
-            <b></b>
-            <b></b>
-            <b></b>
             <b>Handelsregister</b>
-            <b></b>
-            <b></b>
         </li>
     <li><b>-</b></li>
     <li><b>-</b></li>
@@ -89,51 +61,23 @@
 
     </br>
     <h2>4. Zahlung</h2>
-    <p>Grundsätzlich bieten wir die Zahlungsarten <!-- Работает если перенести в первый блок на верх и нажать на кнопку AGB generieren -->
+    <p>Grundsätzlich bieten wir die Zahlungsarten
 
         <b>Vorkasse</b>
         <b>SEPA-Lastschrift.</b>
-        <b></b>
-        <b></b>
-        <b></b>
-        <b></b>
-        <b></b>
-        <b></b>
-        <b></b>
-        <b></b>
-        <b></b>
         <b>Barzahlung bei Abholung</b>
 
     an. Wir behalten uns bei jeder Bestellung das Recht vor, bestimmte Zahlarten nicht anzubieten und auf die von uns angebotenen Zahlarten zu verweisen.</p>
     <b>Vorkasse. Bei Auswahl der Zahlungsart Vorkasse nennen wir Ihnen unsere Bankverbindung in separater E-Mail und liefern die Ware nach Zahlungseingang.</b>
         <b>SEPA-Lastschrift. Mit Abgabe der Bestellung erteilen Sie uns ein SEPA-Lastschriftmandat. Über das Datum der Kontobelastung werden wir Sie informieren (sog. Prenotification). Mit Einreichung des SEPA-Lastschriftmandats fordern wir unsere Bank zur Einleitung der Zahlungstransaktion auf. Die Zahlungstransaktion wird automatisch durchgeführt und Ihr Konto belastet. Die Kontobelastung erfolgt vor Versand der Ware. Die Frist für die Vorabankündigung über das Datum der Kontobelastung (sog. Prenotification-Frist) beträgt 1 Tage.</b>
-        <b></b>
-        <b></b>
-        <b></b>
-        <b></b>
-        <b></b>
-        <b></b>
-        <b></b>
-        <b></b>
-        <b></b>
-        <b></b>
         <b>Barzahlung bei Abholung. Sie bezahlen den Rechnungsbetrag bei der Abholung bar</b>
-
-
-                <b>Bitte beachten Sie, dass wir ausschließlich Zahlungen von Konten innerhalb der Europäischen Union (EU) akzeptieren. Etwaige Kosten einer Geldtransaktion werden von Ihnen getragen.</b>
-
-
+        <b>Bitte beachten Sie, dass wir ausschließlich Zahlungen von Konten innerhalb der Europäischen Union (EU) akzeptieren. Etwaige Kosten einer Geldtransaktion werden von Ihnen getragen.</b>
     </br></br>
     <h2>5. Gutscheine und Codes und deren Einlösung</h2>
-
-    
-    Es wurden keine Gutscheine oder Codes ausgewählt    </br></br>
-
+    Es wurden keine Gutscheine oder Codes ausgewählt</br></br>
     <h2>6. Widerrufsbelehrung</h2>
     <h3>Widerrufsrecht</h3>
-
-    
-    Sie haben das Recht, binnen vierzehn Tagen ohne Angabe von Gründen diesen Vertrag zu widerrufen.</br></br>
+        Sie haben das Recht, binnen vierzehn Tagen ohne Angabe von Gründen diesen Vertrag zu widerrufen.</br></br>
         Die Widerrufsfrist beträgt vierzehn Tage ab dem Tag an dem Sie oder ein von Ihnen benannter Dritter, der nicht der Beförderer ist, die Waren in Besitz genommen haben bzw. hat.</br></br>
         Damit Sie Ihr Widerrufsrecht ausüben können, müssen Sie uns eine eindeutige Erklärung über Ihren Entschluss zukommen lassen, diesen Vertrag zu widerrufen. Diese Erklärung kann über einen versandten Brief, ein Telefax oder eine E-Mail stattfinden. In diesem müssen Sie Ihren Namen (ggf. Namen des Unternehmens), Ihre Anschrift und – soweit verfügbar – Telefonnummer, Telefaxnummer und E-Mail Adresse angeben. Dafür können Sie das unter der Widerrufsbelehrung bereitgestellte Formular nutzen; jedoch ist dies nicht verpflichtend. Sie können dieses Muster-Widerrufsformular oder eine andere eindeutige Erklärung zum Widerruf uns übermitteln. Machen Sie von Ihrem Widerruf Gebrauch, werden wir Ihnen nach dem Eingang des Widerrufs per E-Mail eine Bestätigung über den Eingang des Widerrufs übermitteln. Zur Wahrung der Widerrufsfrist reicht es aus, dass Sie die Mitteilung über die Ausübung des Widerrufsrechts vor Ablauf der Widerrufsfrist absenden.
 
@@ -152,54 +96,26 @@
         </br></br>
     <h2>8.Freiwilliges Rückgaberech</h2>
     Sie möchten kein freiwilliges Rückgaberecht anbieten.
-    
-
     </br></br>
     <h2>9.Lieferung und Lieferzeit</h2>
     Lieferungen sind grundsätzlich nur innerhalb Deutschlands möglich. Die Abgabe von Artikeln erfolgt nur in haushaltsüblichen Mengen und nur an Endverbraucher.        
     </br></br>
     <h2>10. Versandkosten</h2>
     Bei <b></b> bestellen Sie versandkostenfrei.
-    
-    
-
     </br></br>
     <h2>11. Gewährleistung</h2></br>
         Sollten gelieferte Artikel offensichtliche Material- oder Herstellungsfehler aufweisen, wozu auch Transportschäden zählen, so reklamieren Sie diese Fehler sofort gegenüber uns oder dem Mitarbeiter des Transportdienstleisters, der Ihnen die Ware liefert. Sollten Sie dies versäumen, hat dies für Ihre gesetzlichen Ansprüche keine Konsequenzen. Für alle während der gesetzlichen Gewährleistungsfrist auftretenden Mängel der Kaufsache gelten nach Ihrer Wahl die gesetzlichen Ansprüche auf Nacherfüllung, auf Mangelbeseitigung/Neulieferung sowie – bei Vorliegen der gesetzlichen Voraussetzungen – die weitergehenden Ansprüche auf Minderung oder Rücktritt sowie daneben auf Schadensersatz, einschließlich des Ersatzes des Schadens statt der Erfüllung sowie des Ersatzes Ihrer vergeblichen Aufwendungen. Die Gewährleistungsfrist für Neuware beträgt zwei Jahre. Ausgenommen davon sind Waren, die unter den § 312g Abs. 2 BGB fallen.
     </br></br>
     <h2>12. Eigentumsvorbehalt</h2>
     <p>Bis zur vollständigen Eingang der Bezahlung bleibt die Ware Eigentum der <b></b>
-
-    <b></b>
-    <b></b>
-    <b></b>
-    <b></b>
-    <b></b>
-    <b></b>
-    <b></b>
-    <b></b>
-    <b></b>
-    <b></b>
-    <b></b>
-    <b></b>
-    <b></b>
     <b>Sonstiges</b>
-    <b></b>
-    <b></b>
-    <b></b>
     </p>
-
-
-
     <h2>13. Haftung</h2>
     <p>Wir haften unbeschränkt für Vorsatz und grobe Fahrlässigkeit und nach den Vorgaben des Produkthaftungsgesetzes. Bei leichter Fahrlässigkeit haften wir grundsätzlich nur bei Verletzungen des Lebens, des Körpers und der Gesundheit von Personen.</br></br>
     Sollte dies bei einer leichten Fahrlässigkeit nicht zutreffen, haften wir nur im Falle der Verletzung von vertragswesentlichen Pflichten. Als diese werden Pflichten verstanden, welche die Erfüllung der ordnungsgemäßen Durchführung des Vertrages erst ermöglichen und auf deren Einhaltung der Vertragspartner vertraut. Die Haftung bei der Verletzung einer vertragswesentlichen Pflicht ist auf den für den erlittenen Schaden typischen Schadensersatz begrenzt, mit dessen Entstehen wir bei Vertragsabschluss auf Grund der zu diesem Zeitpunkt bekannten Umständen rechnen mussten. Die hier vorliegende Haftungsbeschränkung gilt ebenfalls zugunsten von unseren Erfüllungsgehilfen.
     </p>
-
     </br></br>
-
     <p>Diese Richtlinie gilt ab Sonntag, der 10.08.2025 10:50 Uhr.</p>
-    
     </div>
   </div>
 </template>
