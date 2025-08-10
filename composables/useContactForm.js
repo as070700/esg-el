@@ -1,7 +1,7 @@
-// composables/useKontaktForm.js
+// composables/useContactForm.js
 import { ref } from 'vue'
 
-export function useKontaktForm() {
+export function useContactForm() {
   const name = ref('')
   const email = ref('')
   const nachricht = ref('')
