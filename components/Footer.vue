@@ -6,27 +6,53 @@
     <p>&copy; 2025 ESG - einfach, schnell und günstig</p>
     <p>Alle Rechte vorbehalten.</p>
     <div class="footer-links">
-      <p>Kontakt: <a href="mailto:info@esg-el.de">info@esg-el.de</a> | </p>
-      <p>Impressum: <a href="/legalnotice">Impressum</a> | </p>
-      <p>Datenschutz: <a href="/privacypolicy">Datenschutz</a> | </p>
-      <p>AGB: <a href="/agb">AGB</a></p>
+      <p class="footer-info">
+        <a href="mailto:info@esg-el.de">info@esg-el.de</a>
+        | <a href="/legalnotice"> Impressum </a>
+        | <a href="/privacypolicy"> Datenschutz </a>
+        | <a href="/agb"> AGB </a></p>
     </div>
   </footer>
 </template>
 
 <style scoped>
+
 footer {
-  margin-top: 2rem;
-  padding: 1rem;
-  background: #f0f0f0;
+  width: 100%;
+  height: 120px;
+  background: #82ade2;
   text-align: center;
+  position: relative;
+  padding: 1rem;
 }
 
-.footer-links {
-  margin-top: 1rem;
-  text-align: center;
+footer p {
+  margin: 0.5rem 0;
+  color: #fff;
+}
+
+.footer-info a {
+  color: #5e7ca0;
+  text-decoration: none;
+}
+
+.footer-info p {
   display: flex;
   flex-direction: row;
   align-items: center;
+  margin: 0;
 }
+
+footer p a:hover {
+  text-decoration: underline;
+}
+
+.footer-links {
+  align-items: center;
+}
+
+.footer-info {
+  display: inline;
+}
+
 </style>

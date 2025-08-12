@@ -15,15 +15,28 @@
     <nuxt-link to="/contact">Kontakt</nuxt-link>
   </div>
 
+  <div>
+    <Slideshow />
+  </div>
+
   <div class="services">
     <h2>Unsere Dienstleistungen</h2>
     <ul>
       <li>Entrümpelung</li>
       <li>Entsorgung</li>
       <li>Reinigung</li>
+      <li>Umzüge</li>
+      <li>Haushaltsauflösungen</li>
+      <li>Transportdienste</li>
+      <li>Montageservice</li>
+      <li>Beratung und Planung</li>
     </ul>
   </div>
 </template>
+
+<script setup>
+import Slideshow from '~/components/Slideshow.vue'
+</script>
 
 <style scoped>
 
@@ -70,4 +83,5 @@
     font-size: 1.2em;
     color: #666;
   }
+
 </style>
