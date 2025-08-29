@@ -7,7 +7,7 @@
   |-- buchen.vue          // Terminbuchung mit Formular
   |-- kontakt.vue         // Kontaktformular
 /components
-  |-- Navigation.vue      // Navigation für alle Seiten
+  |-- Navbar.vue          // Navigation für alle Seiten
   |-- Footer.vue          // Optionaler Footer
 /app.vue                 // Hauptlayout mit Navigation + Footer
 */
@@ -24,6 +24,6 @@
 </template>
 
 <script setup>
-import Navigation from '~/components/Navigation.vue'
+import Navigation from '~/components/Navbar.vue'
 import Footer from '~/components/Footer.vue'
 </script>

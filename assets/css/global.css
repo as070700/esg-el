@@ -4,26 +4,26 @@ body {
 
 h1 {
   font-size: 2rem;
-  color: #333;
+  color: #27549d;
 }
 
 h2 {
   font-size: 1.5rem;
-  color: #444;
+  color: #40649e;
 }
 
 h3 {
   font-size: 1.25rem;
-  color: #555;
+  color: #55719d;
 }
 
 p {
   font-size: 1rem;
-  color: #666;
+  color: #000000;
 }
 
 a {
-  color: #825f24;
+  color: #336198;
   text-decoration: none;
 }
 

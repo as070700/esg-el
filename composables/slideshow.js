@@ -1,9 +1,5 @@
-/***/
-
-// composable/slideshow.js
-export function initSlideshow(slidesSelector) {
+export function initSlideshow(slides) {
   let slideIndex = 0;
-  const slides = document.querySelectorAll(slidesSelector);
 
   function showSlide(n) {
     slides.forEach((slide, index) => {
@@ -16,9 +12,8 @@ export function initSlideshow(slidesSelector) {
     showSlide(slideIndex);
   }
 
-  // Start
   if (slides.length > 0) {
     showSlide(slideIndex);
-    setInterval(nextSlide, 3000); // 3 Sekunden pro Slide
+    setInterval(nextSlide, 3000);
   }
 }

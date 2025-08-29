@@ -2,26 +2,30 @@
   <div class="slideshow-container">
     <img v-for="(image, index) in images" 
          :key="index" 
-         :src="image" 
-         class="slide" />
+         :src="image.src" 
+         :alt="image.alt" 
+         class="slide"
+         ref="slides" />   <!-- ref hinzugefügt -->
   </div>
 </template>
 
 <script setup>
-import { onMounted } from 'vue'
+import { onMounted, ref, nextTick } from 'vue'
 import { initSlideshow } from '@/composables/slideshow.js'
 
-// Bilder aus dem public-Ordner
+const slides = ref([])  // Ref für alle Bilder
+
 const images = [
-  "/slides/alicia-christin-gerald-umzug_fenster_unsplash.jpg",
-  "/slides/chuttersnap--lkw-unsplash.jpg",
-  "/slides/mak-hallekisten-unsplash.jpg",
-  "/slides/umzug_ryu_orn_unsplash.jpg",
-  "/slides/yucel-moran-container-unsplash.jpg"
+  { src: "/slides/alicia-christin-gerald-umzug_fenster_unsplash.jpg", alt: "Person beim Umzug am Fenster" },
+  { src: "/slides/chuttersnap--lkw-unsplash.jpg", alt: "LKW auf der Straße" },
+  { src: "/slides/mak-hallekisten-unsplash.jpg", alt: "Kisten in Lagerhalle" },
+  { src: "/slides/umzug_ryu_orn_unsplash.jpg", alt: "Umzugskartons" },
+  { src: "/slides/yucel-moran-container-unsplash.jpg", alt: "Container vor einem Gebäude" }
 ];
 
-onMounted(() => {
-  initSlideshow('.slide')
+onMounted(async () => {
+  await nextTick() // sicherstellen, dass DOM gerendert ist
+  initSlideshow(slides.value)
 })
 </script>
 

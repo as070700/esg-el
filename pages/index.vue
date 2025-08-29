@@ -45,11 +45,6 @@ import Slideshow from '~/components/Slideshow.vue'
     margin-top: 50px;
   }
 
-  .welcome h1 {
-    font-size: 2.5em;
-    color: #333;
-  }
-
   .welcome p {
     font-size: 1.2em;
     color: #666;
@@ -67,11 +62,6 @@ import Slideshow from '~/components/Slideshow.vue'
   .services {
     text-align: center;
     margin: 40px 0;
-  }
-
-  .services h2 {
-    font-size: 2em;
-    color: #333;
   }
 
   .services ul {
