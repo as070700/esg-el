@@ -3,9 +3,13 @@
 
 /pages
   |-- index.vue           // Startseite
-  |-- leistungen.vue      // Leistungen
-  |-- buchen.vue          // Terminbuchung mit Formular
-  |-- kontakt.vue         // Kontaktformular
+  |-- services.vue        // Leistungen
+  |-- boocking.vue        // Terminbuchung mit Formular
+  |-- contact.vue         // Kontaktformular
+  |-- legalnotice.vue     // Impressum
+  |-- privatypolice.vue   // Datenschutz
+  |-- agb.vue             // AGB
+  |-- error.vue           // Fehlerseite (404, 500, etc.)
 /components
   |-- Navbar.vue          // Navigation für alle Seiten
   |-- Footer.vue          // Optionaler Footer
