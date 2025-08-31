@@ -22,7 +22,7 @@
         <b></b>
         <b></b>
         <b></b>
-        <b>Sonstiges</b>
+        <b>ESG</b>
         <b></b>
         <b></b>
         <b></b>
@@ -31,8 +31,7 @@
     <p>Ein Verbraucher ist jede natürliche Person, die ein Rechtsgeschäft zu einem Zwecke abschließt der überwiegend weder ihrer gewerblichen noch ihrer selbständigen beruflichen Tätigkeit zugerechnet werden kann.</p>
     <br>
     <h2>Vertragspartner</h2>
-    <p>Der Kaufvertrag wird mit <b></b> abgeschlossen.
-        <b>Sonstiges.</b>
+    <p>Der Kaufvertrag wird mit <b>ESG</b> abgeschlossen.
     </p>
     <ul>
     <li><b>EL</b></li>
@@ -61,17 +60,17 @@
 
     <br>
     <h2>4. Zahlung</h2>
-    <p>Grundsätzlich bieten wir die Zahlungsarten
+    <p>Grundsätzlich bieten wir die Zahlungsarten<br><br>
 
-        <b>Vorkasse</b>
-        <b>SEPA-Lastschrift.</b>
-        <b>Barzahlung bei Abholung</b>
+        <b>Vorkasse</b><br>
+        <b>SEPA-Lastschrift.</b><br>
+        <b>Barzahlung bei Abholung</b><br><br>
 
     an. Wir behalten uns bei jeder Bestellung das Recht vor, bestimmte Zahlarten nicht anzubieten und auf die von uns angebotenen Zahlarten zu verweisen.</p>
     <b>Vorkasse. Bei Auswahl der Zahlungsart Vorkasse nennen wir Ihnen unsere Bankverbindung in separater E-Mail und liefern die Ware nach Zahlungseingang.</b>
         <b>SEPA-Lastschrift. Mit Abgabe der Bestellung erteilen Sie uns ein SEPA-Lastschriftmandat. Über das Datum der Kontobelastung werden wir Sie informieren (sog. Prenotification). Mit Einreichung des SEPA-Lastschriftmandats fordern wir unsere Bank zur Einleitung der Zahlungstransaktion auf. Die Zahlungstransaktion wird automatisch durchgeführt und Ihr Konto belastet. Die Kontobelastung erfolgt vor Versand der Ware. Die Frist für die Vorabankündigung über das Datum der Kontobelastung (sog. Prenotification-Frist) beträgt 1 Tage.</b>
-        <b>Barzahlung bei Abholung. Sie bezahlen den Rechnungsbetrag bei der Abholung bar</b>
-        <b>Bitte beachten Sie, dass wir ausschließlich Zahlungen von Konten innerhalb der Europäischen Union (EU) akzeptieren. Etwaige Kosten einer Geldtransaktion werden von Ihnen getragen.</b>
+        <b>Barzahlung bei Abholung. Sie bezahlen den Rechnungsbetrag bei der Abholung bar.</b>
+        <b> Bitte beachten Sie, dass wir ausschließlich Zahlungen von Konten innerhalb der Europäischen Union (EU) akzeptieren. Etwaige Kosten einer Geldtransaktion werden von Ihnen getragen.</b>
     <br><br>
     <h2>5. Gutscheine und Codes und deren Einlösung</h2>
     Es wurden keine Gutscheine oder Codes ausgewählt<br><br>

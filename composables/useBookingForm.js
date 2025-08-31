@@ -2,8 +2,12 @@ import { ref } from 'vue'
 
 export function useBookingForm() {
   const name = ref('')
+  const surname = ref('')
   const email = ref('')
+  const phone = ref('')
   const date = ref('')
+  const serviceType = ref('') 
+  const terms = ref(false)
   const success = ref(false)
 
   const senden = async () => {
@@ -15,6 +19,6 @@ export function useBookingForm() {
     success.value = true
   }
 
-  return { name, email, date, success, senden }
+  return { name, surname, email, phone, date, serviceType, terms, success, senden }
 }
 
