@@ -21,27 +21,17 @@ export function useBookingForm() {
       _replyto: email.value,
       _template: "table",
       _subject: "Neue Terminbuchung von ESG",
+      _autoresponse: "Vielen Dank für Ihre Buchung! Wir melden uns zeitnah bei Ihnen.",
       _honey: ""
     })
 
-    try {
-      const response = await fetch('https://formsubmit.co/ajax/info@esg-el.de', {
+    await fetch('https://formsubmit.co/ajax/info@esg-el.de', {
         method: 'POST',
         headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
         body: formData
       })
-      const result = await response.json()
-      if (!response.ok) {
-        console.error('Formularfehler:', result)
-        alert('Fehler beim Senden des Formulars: ' + (result.message || 'Unbekannter Fehler'))
-        return
-      }
       success.value = true
       window.location.href = "https://esg-el.de/thankyouBooking"
-    } catch (err) {
-      console.error('Netzwerkfehler:', err)
-      alert('Netzwerkfehler beim Senden des Formulars.')
-    }
   }
 
   return { name, surname, email, phone, date, serviceType, terms, success, senden }
