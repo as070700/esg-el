@@ -11,29 +11,28 @@ export function useBookingForm() {
   const success = ref(false)
 
   const senden = async () => {
-    const formData = new URLSearchParams({
-      name: name.value,
-      surname: surname.value,
-      phone: phone.value,
-      serviceType: serviceType.value,
-      email: email.value,
-      date: date.value,
-      _replyto: email.value,
-      _template: "table",
-      _subject: "Neue Terminbuchung von ESG",
-      _autoresponse: "Vielen Dank für Ihre Buchung! Wir melden uns zeitnah bei Ihnen.",
-      _honey: ""
-    })
+    const formData = new FormData()
+    formData.append('name', name.value)
+    formData.append('surname', surname.value)
+    formData.append('phone', phone.value)
+    formData.append('serviceType', serviceType.value)
+    formData.append('email', email.value)
+    formData.append('date', date.value)
+    formData.append('_replyto', email.value)
+    formData.append('_template', 'table')
+    formData.append('_subject', 'Neue Terminbuchung von ESG')
+    formData.append('_autoresponse', 'Vielen Dank für Ihre Buchung! Wir melden uns zeitnah bei Ihnen.')
+    formData.append('_honey', '')
 
-    await fetch('https://formsubmit.co/ajax/info@esg-el.de', {
-        method: 'POST',
-        headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
-        body: formData
-      })
-      success.value = true
-      window.location.href = "https://esg-el.de/thankyouBooking"
+    await fetch('https://formsubmit.co/info@esg-el.de', {
+      method: 'POST',
+      body: formData
+    })
+    success.value = true
+    window.location.href = "https://esg-el.de/thankyouBooking"
   }
 
   return { name, surname, email, phone, date, serviceType, terms, success, senden }
 }
+
 
