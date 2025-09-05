@@ -5,6 +5,12 @@
   <div class="booking-container">
     <h1>Termin buchen</h1>
     <form @submit.prevent="senden" class="booking-form">
+      <!-- Hidden Felder im Formular -->
+      <input type="hidden" name="_template" value="table">
+      <input type="hidden" name="_subject" value="Neue Terminbuchung von ESG">
+      <input type="hidden" name="_next" value="https://esg-el.de/thankyouBooking">
+      <input type="text" name="_honey" style="display:none">
+      <!-- Sichtbare Felder im Formular -->
       <input class="booking-input" type="text" v-model="name" placeholder="Vorname" required />
       <input class="booking-input" type="text" v-model="surname" placeholder="Nachname" required />
       <input class="booking-input" type="email" v-model="email" placeholder="E-Mail" required />
@@ -27,7 +33,6 @@
       </label>
       <button class="booking-button" type="submit">Absenden</button>
     </form>
-    <p class="success-message" v-if="success">Vielen Dank! Wir melden uns in Kürze.</p>
   </div>
 </template>
 
@@ -63,11 +68,6 @@ select.booking-input {
   font-size: 1rem;
   padding: 10px;
   box-sizing: border-box;
-}
-
-.success-message {
-  color: green;
-  margin-top: 10px;
 }
 
 .booking-button {

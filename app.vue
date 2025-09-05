@@ -9,6 +9,8 @@
   |-- legalnotice.vue     // Impressum
   |-- privatypolice.vue   // Datenschutz
   |-- agb.vue             // AGB
+  |-- thankyouBooking.vue // Danke-Seite nach Buchung
+  |-- thankyouContact.vue // Danke-Seite nach Kontaktformular
   |-- error.vue           // Fehlerseite (404, 500, etc.)
 /components
   |-- Navbar.vue          // Navigation für alle Seiten

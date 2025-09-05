@@ -16,6 +16,9 @@ export function useBookingForm() {
       headers: { 'Content-Type': 'application/json' },
       body: JSON.stringify({ 
         name: name.value, 
+        surname: surname.value, 
+        phone: phone.value, 
+        serviceType: serviceType.value,
         email: email.value, 
         date: date.value,
         _replyto: email.value // sorgt für Bestätigungs-E-Mail an den Kunden
