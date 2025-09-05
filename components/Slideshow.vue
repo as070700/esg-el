@@ -1,11 +1,12 @@
 <template>
-  <div class="slideshow-container">
-    <img v-for="(image, index) in images" 
+  <div class="slideshow-container" ref="container">
+    <div v-for="(image, index) in images" 
          :key="index" 
-         :src="image.src" 
-         :alt="image.alt" 
          class="slide"
-         ref="slides" />   <!-- ref hinzugefügt -->
+         ref="slideEls"
+         style="display: none;">
+      <img :src="image.src" :alt="image.alt" class="slideshow-img" />
+    </div>
   </div>
 </template>
 
@@ -13,7 +14,8 @@
 import { onMounted, ref, nextTick } from 'vue'
 import { initSlideshow } from '@/composables/slideshow.js'
 
-const slides = ref([])  // Ref für alle Bilder
+const slideEls = ref([])
+const container = ref(null)
 
 const images = [
   { src: "/slides/alicia-christin-gerald-umzug_fenster_unsplash.jpg", alt: "Person beim Umzug am Fenster" },
@@ -25,22 +27,38 @@ const images = [
 
 onMounted(async () => {
   await nextTick() // sicherstellen, dass DOM gerendert ist
-  initSlideshow(slides.value)
+  initSlideshow(slideEls.value, container.value)
 })
 </script>
 
 <style scoped>
 .slideshow-container {
-  max-width: 600px;
+  width: 700px;
+  height: 300px;
   position: relative;
   margin: auto;
+  overflow: hidden;
+  background: #f5f5f5;
 }
 
 .slide {
-  display: none;
   width: 100%;
-  height: 300px;
+  height: 100%;
+}
+
+.slideshow-img {
+  width: 100%;
+  height: 100%;
   object-fit: cover;
-  border-radius: 8px;
+  display: block;
+}
+
+/* Responsive Anpassung */
+@media (max-width: 800px) {
+  .slideshow-container {
+    width: 100%;
+    max-width: 100vw;
+    height: 180px;
+  }
 }
 </style>

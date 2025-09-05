@@ -30,6 +30,7 @@ const { name, email, nachricht, erfolg, senden } = useContactForm()
 .contact-form {
   max-width: 400px;
   margin: 40px auto;
+  padding: 0 10px;
 }
 
 .contact-input {
@@ -50,6 +51,8 @@ const { name, email, nachricht, erfolg, senden } = useContactForm()
   font-size: 1rem;
   cursor: pointer;
   margin-top: 10px;
+  width: 100%;
+  max-width: 400px;
 }
 .contact-button:hover {
   background-color: #20436a;
@@ -58,5 +61,21 @@ const { name, email, nachricht, erfolg, senden } = useContactForm()
 textarea.contact-input {
   width: 100%;
   height: 250px;
+}
+
+/* Mobile Styles */
+@media (max-width: 600px) {
+  .contact-form {
+    max-width: 100%;
+    padding: 0 5px;
+  }
+  .contact-input,
+  .contact-button,
+  textarea.contact-input {
+    width: 100%;
+    min-width: unset;
+    max-width: unset;
+    font-size: 1rem;
+  }
 }
 </style>

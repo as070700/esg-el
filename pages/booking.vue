@@ -46,6 +46,7 @@ const { name, email, date, success, senden, serviceType } = useBookingForm()
 .booking-form {
   max-width: 700px;
   margin: 40px auto;
+  padding: 0 10px;
 }
 
 .booking-input {
@@ -59,7 +60,7 @@ select.booking-input {
   display: block;
   margin: 0 auto 10px auto;
   height: 48px; 
-  font-size: 3rem;
+  font-size: 1rem;
   padding: 10px;
   box-sizing: border-box;
 }
@@ -78,19 +79,46 @@ select.booking-input {
   font-size: 1rem;
   cursor: pointer;
   margin-top: 10px;
+  width: 100%;
+  max-width: 400px;
 }
+
 .booking-button:hover {
   background-color: #20436a;
 }
+
 .agb-label {
   display: flex;
   align-items: center;
   gap: 8px;
   font-size: 1rem;
   margin-bottom: 10px;
+  flex-wrap: wrap;
 }
 .agb-label input[type="checkbox"] {
   width: auto;
   margin-bottom: 0;
+}
+
+/* Mobile Styles */
+@media (max-width: 600px) {
+  .booking-form {
+    max-width: 100%;
+    padding: 0 5px;
+  }
+  .booking-input,
+  select.booking-input,
+  .booking-button {
+    width: 100%;
+    min-width: unset;
+    max-width: unset;
+    font-size: 1rem;
+  }
+  .agb-label {
+    font-size: 0.95rem;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 4px;
+  }
 }
 </style>

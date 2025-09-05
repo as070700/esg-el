@@ -15,7 +15,7 @@
     <nuxt-link to="/contact">Kontakt</nuxt-link>
   </div>
 
-  <div>
+  <div class="slideshow-container">
     <Slideshow />
   </div>
 
@@ -72,6 +72,50 @@ import Slideshow from '~/components/Slideshow.vue'
   .services li {
     font-size: 1.2em;
     color: #666;
+  }
+
+  .slideshow-container {
+    position: relative;
+    max-width: 700px;
+    margin: 0 auto 40px auto;
+    min-height: 300px; /* optional, je nach Bildgröße */
+  }
+
+  /* Buttons für die Slideshow */
+  .slideshow-prev-btn,
+  .slideshow-next-btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 10;
+    background: rgba(255,255,255,0.7);
+    border: none;
+    font-size: 2rem;
+    cursor: pointer;
+    padding: 0 12px;
+    border-radius: 50%;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.15);
+    user-select: none;
+  }
+
+  .slideshow-prev-btn {
+    left: 10px;
+  }
+
+  .slideshow-next-btn {
+    right: 10px;
+  }
+
+  @media (max-width: 600px) {
+    .slideshow-container {
+      max-width: 100%;
+      min-height: 180px;
+    }
+    .slideshow-prev-btn,
+    .slideshow-next-btn {
+      font-size: 1.5rem;
+      padding: 0 8px;
+    }
   }
 
 </style>
