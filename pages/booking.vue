@@ -5,11 +5,7 @@
   <div class="booking-container">
     <h1>Termin buchen</h1>
     <form @submit.prevent="senden" class="booking-form">
-      <!-- Hidden Felder im Formular -->
-      <input type="hidden" name="_template" value="table">
-      <input type="hidden" name="_subject" value="Neue Terminbuchung von ESG">
-      <input type="hidden" name="_next" value="https://esg-el.de/thankyouBooking">
-      <input type="text" name="_honey" style="display:none">
+      <!-- Hidden Felder werden entfernt, da sie im Composable gesendet werden -->
       <!-- Sichtbare Felder im Formular -->
       <input class="booking-input" type="text" v-model="name" placeholder="Vorname" required />
       <input class="booking-input" type="text" v-model="surname" placeholder="Nachname" required />
@@ -118,6 +114,10 @@ select.booking-input {
     width: 100%;
     font-size: 0.85rem;
     align-items: flex-start;
+    gap: 4px;
+  }
+}
+</style>
     gap: 4px;
   }
 }

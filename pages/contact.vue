@@ -6,7 +6,7 @@
     <h1>Kontakt</h1>
     <p>Sie haben Fragen? Schreiben Sie uns.</p>
     <form @submit.prevent="senden" class="contact-form">
-            <!-- Hidden Felder im Formular -->
+      <!-- Hidden Felder im Formular -->
       <input type="hidden" name="_template" value="table">
       <input type="hidden" name="_subject" value="Neue Kontaktanfrage von ESG">
       <input type="hidden" name="_next" value="https://esg-el.de/thankyouContact">

@@ -21,7 +21,11 @@ export function useBookingForm() {
         serviceType: serviceType.value,
         email: email.value, 
         date: date.value,
-        _replyto: email.value // sorgt für Bestätigungs-E-Mail an den Kunden
+        _replyto: email.value,
+        _template: "table",
+        _subject: "Neue Terminbuchung von ESG",
+        _next: "https://esg-el.de/thankyouBooking",
+        _honey: "" // falls du ein Honeypot-Feld nutzen willst
       })
     })
     success.value = true
