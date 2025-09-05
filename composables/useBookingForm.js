@@ -11,24 +11,26 @@ export function useBookingForm() {
   const success = ref(false)
 
   const senden = async () => {
+    const formData = new URLSearchParams({
+      name: name.value,
+      surname: surname.value,
+      phone: phone.value,
+      serviceType: serviceType.value,
+      email: email.value,
+      date: date.value,
+      _replyto: email.value,
+      _template: "table",
+      _subject: "Neue Terminbuchung von ESG",
+      _honey: ""
+    })
+
     await fetch('https://formsubmit.co/ajax/info@esg-el.de', {
       method: 'POST',
-      headers: { 'Content-Type': 'application/json' },
-      body: JSON.stringify({ 
-        name: name.value, 
-        surname: surname.value, 
-        phone: phone.value, 
-        serviceType: serviceType.value,
-        email: email.value, 
-        date: date.value,
-        _replyto: email.value,
-        _template: "table",
-        _subject: "Neue Terminbuchung von ESG",
-        _next: "https://esg-el.de/thankyouBooking",
-        _honey: "" // falls du ein Honeypot-Feld nutzen willst
-      })
+      headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
+      body: formData
     })
     success.value = true
+    window.location.href = "https://esg-el.de/thankyouBooking"
   }
 
   return { name, surname, email, phone, date, serviceType, terms, success, senden }

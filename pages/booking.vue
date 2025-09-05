@@ -5,8 +5,6 @@
   <div class="booking-container">
     <h1>Termin buchen</h1>
     <form @submit.prevent="senden" class="booking-form">
-      <!-- Hidden Felder werden entfernt, da sie im Composable gesendet werden -->
-      <!-- Sichtbare Felder im Formular -->
       <input class="booking-input" type="text" v-model="name" placeholder="Vorname" required />
       <input class="booking-input" type="text" v-model="surname" placeholder="Nachname" required />
       <input class="booking-input" type="email" v-model="email" placeholder="E-Mail" required />
