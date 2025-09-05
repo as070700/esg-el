@@ -105,7 +105,7 @@ function toggleMenu() {
     display: none; /* Standard: versteckt */
     flex-direction: column;
     position: absolute;
-    top: 25px;
+    top: 80%;
     right: 0;
     background: #82ade2;
     width: 200px;

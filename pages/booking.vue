@@ -9,7 +9,7 @@
       <input class="booking-input" type="text" v-model="surname" placeholder="Nachname" required />
       <input class="booking-input" type="email" v-model="email" placeholder="E-Mail" required />
       <input class="booking-input" type="tel" v-model="phone" placeholder="Telefonnummer" required />
-      <input class="booking-input" type="date" placeholder="TT.MM.JJJJ" v-model="date" required />
+      <p>Wunschdatum:</p><input class="booking-input" type="date" placeholder="TT.MM.JJJJ" v-model="date" required />
       <select class="booking-input" v-model="serviceType" required>
         <option value="" disabled>Art der Leistung wählen</option>
         <option value="Entrümpelung">Entrümpelung</option>
@@ -115,8 +115,8 @@ select.booking-input {
     font-size: 1rem;
   }
   .agb-label {
-    font-size: 0.95rem;
-    flex-direction: column;
+    width: 100%;
+    font-size: 0.85rem;
     align-items: flex-start;
     gap: 4px;
   }

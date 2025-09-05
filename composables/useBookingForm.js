@@ -14,7 +14,12 @@ export function useBookingForm() {
     await fetch('https://formsubmit.co/ajax/info@esg-el.de', {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
-      body: JSON.stringify({ name: name.value, email: email.value, date: date.value })
+      body: JSON.stringify({ 
+        name: name.value, 
+        email: email.value, 
+        date: date.value,
+        _replyto: email.value // sorgt für Bestätigungs-E-Mail an den Kunden
+      })
     })
     success.value = true
   }
