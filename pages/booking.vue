@@ -118,7 +118,3 @@ select.booking-input {
   }
 }
 </style>
-    gap: 4px;
-  }
-}
-</style>
