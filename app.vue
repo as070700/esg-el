@@ -15,6 +15,8 @@
 /components
   |-- Navbar.vue          // Navigation für alle Seiten
   |-- Footer.vue          // Optionaler Footer
+  |-- Slideshow.vue       // Bilderslideshow auf der Startseite
+  |-- CookieBanner.vue    // Cookie-Hinweis
 /app.vue                 // Hauptlayout mit Navigation + Footer
 */
 
@@ -25,6 +27,7 @@
   <div>
     <Navigation />
     <NuxtPage />
+    <CookieBanner />
     <Footer />
   </div>
 </template>
@@ -32,4 +35,5 @@
 <script setup>
 import Navigation from '~/components/Navbar.vue'
 import Footer from '~/components/Footer.vue'
+import CookieBanner from '~/components/CookieBanner.vue'
 </script>
