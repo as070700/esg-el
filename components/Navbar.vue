@@ -7,6 +7,7 @@
     <ul class="nav-links" :class="{ open: isOpen }">
       <NuxtLink to="/booking">Buchen</NuxtLink>
       <NuxtLink to="/contact">Kontakt</NuxtLink>
+      <NuxtLink to="/leichtesprache" aria-label="Zur Seite in Leichter Sprache">Leichte Sprache</NuxtLink>
     </ul>
 
     <!-- Hamburger-Icon (nur mobil sichtbar) -->
@@ -36,7 +37,7 @@ function toggleMenu() {
   align-items: center;
   padding: 15px 25px;
   background: #82ade2;
-  color: white;
+  color: #000;
   position: relative;
 }
 
@@ -60,13 +61,13 @@ function toggleMenu() {
 }
 
 .nav-links a {
-  color: #cfe4ff;
+  color: #003472;
   text-decoration: none;
   transition: color 0.3s;
 }
 
 .nav-links a:hover {
-  color: #5e7ca0;
+  color: #274569;
 }
 
 /* === Hamburger Icon === */
@@ -81,7 +82,7 @@ function toggleMenu() {
 }
 
 .hamburger span {
-  background: white;
+  background: #000;
   height: 3px;
   width: 100%;
   border-radius: 5px;

@@ -28,11 +28,11 @@ footer {
 
 footer p {
   margin: 0.5rem 0;
-  color: #fff;
+  color: #000;
 }
 
 .footer-info a {
-  color: #5e7ca0;
+  color: #003472;
   text-decoration: none;
 }
 

@@ -5,12 +5,12 @@
   <div class="booking-container">
     <h1>Termin buchen</h1>
     <form @submit.prevent="senden" class="booking-form">
-      <input class="booking-input" type="text" v-model="name" placeholder="Vorname" required />
-      <input class="booking-input" type="text" v-model="surname" placeholder="Nachname" required />
-      <input class="booking-input" type="email" v-model="email" placeholder="E-Mail" required />
-      <input class="booking-input" type="tel" v-model="phone" placeholder="Telefonnummer" required />
-      <p>Wunschdatum:</p><input class="booking-input" type="date" placeholder="TT.MM.JJJJ" v-model="date" required />
-      <select class="booking-input" v-model="serviceType" required>
+      <input class="booking-input" type="text" v-model="name" placeholder="Vorname" required tabindex="1" />
+      <input class="booking-input" type="text" v-model="surname" placeholder="Nachname" required tabindex="2" />
+      <input class="booking-input" type="email" v-model="email" placeholder="E-Mail" required tabindex="3" />
+      <input class="booking-input" type="tel" v-model="phone" placeholder="Telefonnummer" required tabindex="4" />
+      <p>Wunschdatum:</p><input class="booking-input" type="date" placeholder="TT.MM.JJJJ" v-model="date" required tabindex="5" />
+      <select class="booking-input" v-model="serviceType" required tabindex="6">
         <option value="" disabled>Art der Leistung wählen</option>
         <option value="Entrümpelung">Entrümpelung</option>
         <option value="Entsorgung">Entsorgung</option>
@@ -22,10 +22,10 @@
         <option value="Beratung und Planung">Beratung und Planung</option>
       </select>
       <label class="agb-label">
-        <input type="checkbox" v-model="terms" required />
+        <input type="checkbox" v-model="terms" required tabindex="7" />
         Ich akzeptiere die <NuxtLink to="/legalnotice">AGB</NuxtLink> und die <NuxtLink to="/privatypolice">Datenschutzerklärung</NuxtLink>.
       </label>
-      <button class="booking-button" type="submit">Absenden</button>
+      <button class="booking-button" type="submit" tabindex="8">Absenden</button>
     </form>
   </div>
 </template>
