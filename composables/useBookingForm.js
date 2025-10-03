@@ -22,7 +22,6 @@ export function useBookingForm() {
     formData.append('_template', 'table')
     formData.append('_subject', 'Neue Terminbuchung von ESG')
     formData.append('_autoresponse', 'Vielen Dank für Ihre Buchung! Wir melden uns zeitnah bei Ihnen.')
-    formData.append('_honey', '')
 
     await fetch('https://formsubmit.co/info@esg-el.de', {
       method: 'POST',

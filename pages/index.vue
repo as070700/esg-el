@@ -3,7 +3,7 @@
 // ----------------------------
 <template>
   <div class="welcome">
-    <h1>Willkommen bei ESG</h1>
+    <h1>Willkommen bei ESG - EL</h1>
     <p>Ihr Partner für Entrümpelung: einfach, schnell und günstig.</p>
   </div>
 

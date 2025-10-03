@@ -1,6 +1,6 @@
 <template>
   <div class="leichtesprache">
-    <h1>Willkommen bei ESG in Leichter Sprache</h1>
+    <h1>Willkommen bei ESG - EL in Leichter Sprache</h1>
     <p>Wir helfen Ihnen beim Aufräumen und Umziehen.</p>
     <p>Sie können uns anrufen oder eine Nachricht schreiben.</p>
     <ul>
