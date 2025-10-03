@@ -23,11 +23,22 @@ export function useBookingForm() {
     formData.append('_autoresponse', 'Vielen Dank für Ihre Buchung! Wir melden uns zeitnah bei Ihnen.')
     formData.append('_next', 'https://esg-el.de/thankyouBooking')
 
-    await fetch('https://formsubmit.co/info@esg-el.de', {
+    const response = await fetch('https://formsubmit.co/info@esg-el.de', {
       method: 'POST',
-      body: formData
+      body: formData,
+      headers: {
+        'Accept': 'application/json'
+      }
     })
-    success.value = true
+    if (response.ok) {
+      success.value = true
+      console.log('Formular erfolgreich versendet.')
+      window.location.href = 'https://esg-el.de/thankyouBooking'
+    } else {
+      success.value = false
+      console.log('Fehler beim Versenden des Formulars:', response.status)
+      // Optional: Fehlerbehandlung
+    }
   }
 
   return { name, surname, email, phone, date, serviceType, terms, success, senden }
