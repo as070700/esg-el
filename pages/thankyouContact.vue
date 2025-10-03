@@ -3,7 +3,7 @@
 // ----------------------------
 <template>
   <div class="thankyou-container">
-    <h1>Vielen Dank für Ihre Buchung!</h1>
+    <h1>Vielen Dank für Ihre Kontaktaufnahme!</h1>
     <p>Wir haben Ihre Anfrage erhalten und werden uns in Kürze bei Ihnen melden.</p>
     <NuxtLink to="/">Zur Startseite</NuxtLink>
     <p></p>
