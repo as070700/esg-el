@@ -5,6 +5,7 @@
   <div class="thankyou-container">
     <h1>Vielen Dank für Ihre Buchung!</h1>
     <p>Wir haben Ihre Anfrage erhalten und werden uns in Kürze bei Ihnen melden.</p>
+    <p>Sie bekommen in Kürze eine Bestätigungsmail. Bitte schauen Sie zusätzlich im Spam-Ordner nach.</p>
     <NuxtLink to="/">Zur Startseite</NuxtLink>
     <p></p>
     <NuxtLink to="/booking">Neuen Termin buchen</NuxtLink>
