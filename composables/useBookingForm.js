@@ -38,7 +38,6 @@ export function useBookingForm() {
     } else {
       success.value = false
       console.log('Fehler beim Versenden des Formulars:', response.status)
-      // Optional: Fehlerbehandlung
     }
   }
 

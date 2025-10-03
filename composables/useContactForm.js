@@ -5,27 +5,35 @@ export function useContactForm() {
   const name = ref('')
   const email = ref('')
   const nachricht = ref('')
-  const erfolg = ref(false)
+  const success = ref(false)
 
   const senden = async () => {
-    const formData = new URLSearchParams({
-      name: name.value,
-      email: email.value,
-      nachricht: nachricht.value,
-      _replyto: email.value,
-      _template: "table",
-      _subject: "Neue Kontaktanfrage von ESG",
-      _honey: ""
-    })
+    const formData = new FormData()
+    formData.append('name', name.value)
+    formData.append('email', email.value)
+    formData.append('nachricht', nachricht.value)
+    formData.append('_template', 'table')
+    formData.append('_subject', 'Neue Kontaktanfrage von ESG')
+    formData.append('_captcha', 'false')
+    formData.append('_autoresponse', 'Vielen Dank für Ihre Nachricht! Wir melden uns zeitnah bei Ihnen.')
 
-    await fetch('https://formsubmit.co/ajax/info@esg-el.de', {
+    const response = await fetch('https://formsubmit.co/info@esg-el.de', {
       method: 'POST',
-      headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
-      body: formData
+      body: formData,
+      headers: {
+        'Accept': 'application/json'
+      }
     })
-    erfolg.value = true
-    window.location.href = "https://esg-el.de/thankyouContact"
+    console.log(response)
+    if (response.ok) {
+      success.value = true
+      console.log('Formular erfolgreich versendet.')
+      window.location.href = 'https://esg-el.de/thankyouContact'
+    } else {
+      success.value = false
+      console.log('Fehler beim Versenden des Formulars:', response.status)
+    }
   }
 
-  return { name, email, nachricht, erfolg, senden }
+  return { name, email, nachricht, success, senden }
 }
