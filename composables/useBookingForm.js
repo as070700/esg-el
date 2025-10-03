@@ -1,5 +1,5 @@
 import { ref } from 'vue'
-import emailjs from 'emailjs-com'
+import emailjs from '@emailjs/browser'
 
 export function useBookingForm() {
   const name = ref('')

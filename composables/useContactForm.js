@@ -1,6 +1,6 @@
 // composables/useContactForm.js
 import { ref } from 'vue'
-import emailjs from 'emailjs-com'
+import emailjs from 'emailjs/browser'
 
 export function useContactForm() {
   const name = ref('')
