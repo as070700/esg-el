@@ -31,6 +31,12 @@ export function useBookingForm() {
       }
     })
     console.log(response)
+    try {
+      const result = await response.json()
+      console.log(result)
+    } catch (e) {
+      console.log('Keine JSON-Antwort erhalten:', e)
+    }
     if (response.ok) {
       success.value = true
       console.log('Formular erfolgreich versendet.')
