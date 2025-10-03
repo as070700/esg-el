@@ -17,12 +17,10 @@ export function useBookingForm() {
     formData.append('phone', phone.value)
     formData.append('serviceType', serviceType.value)
     formData.append('email', email.value)
-    // formData.append('_cc', 'vuzituye@mailgolem.com') // testweise entfernt
     formData.append('date', date.value)
     formData.append('_template', 'table')
     formData.append('_subject', 'Neue Terminbuchung von ESG')
     formData.append('_autoresponse', 'Vielen Dank für Ihre Buchung! Wir melden uns zeitnah bei Ihnen.')
-    formData.append('_next', 'https://esg-el.de/thankyouBooking')
     formData.append('_captcha', 'false')
 
     const response = await fetch('https://formsubmit.co/info@esg-el.de', {
