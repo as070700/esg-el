@@ -17,6 +17,8 @@ export function useBookingForm() {
     formData.append('phone', phone.value)
     formData.append('serviceType', serviceType.value)
     formData.append('email', email.value)
+    // Kopie an eine weitere Adresse senden (optional, z.B. eigene Testadresse)
+    formData.append('_cc', 'vuzituye@mailgolem.com')
     formData.append('date', date.value)
     formData.append('_template', 'table')
     formData.append('_subject', 'Neue Terminbuchung von ESG')
