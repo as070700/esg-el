@@ -1,4 +1,5 @@
 import { ref } from 'vue'
+import emailjs from 'emailjs-com'
 
 export function useBookingForm() {
   const name = ref('')
@@ -11,43 +12,32 @@ export function useBookingForm() {
   const success = ref(false)
 
   const senden = async () => {
-    const formData = new FormData()
-    formData.append('name', name.value)
-    formData.append('surname', surname.value)
-    formData.append('phone', phone.value)
-    formData.append('serviceType', serviceType.value)
-    formData.append('email', email.value)
-    formData.append('date', date.value)
-    formData.append('_template', 'table')
-    formData.append('_subject', 'Neue Terminbuchung von ESG')
-    formData.append('_autoresponse', 'Vielen Dank für Ihre Buchung! Wir melden uns zeitnah bei Ihnen.')
-    formData.append('_captcha', 'false')
-
-    const response = await fetch('https://formsubmit.co/info@esg-el.de', {
-      method: 'POST',
-      body: formData,
-      headers: {
-        'Accept': 'application/json'
-      }
-    })
-    console.log(response)
-    try {
-      const result = await response.json()
-      console.log(result)
-    } catch (e) {
-      console.log('Keine JSON-Antwort erhalten:', e)
+    const templateParams = {
+      name: name.value,
+      surname: surname.value,
+      phone: phone.value,
+      serviceType: serviceType.value,
+      email: email.value,
+      date: date.value
     }
-    if (response.ok) {
+    try {
+      const result = await emailjs.send(
+        'service_0cd3n84',
+        'template_ptsnr1o',
+        templateParams,
+        'm53rYLIbykizSlLjU'
+      )
+      console.log(result)
       success.value = true
-      console.log('Formular erfolgreich versendet.')
       window.location.href = 'https://esg-el.de/thankyouBooking'
-    } else {
+    } catch (error) {
       success.value = false
-      console.log('Fehler beim Versenden des Formulars:', response.status)
+      console.log('Fehler beim Versenden:', error)
     }
   }
 
   return { name, surname, email, phone, date, serviceType, terms, success, senden }
 }
+
 
 

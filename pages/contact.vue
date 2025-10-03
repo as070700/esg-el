@@ -8,7 +8,7 @@
     <form @submit.prevent="senden" class="contact-form">
       <input class="contact-input" type="text" v-model="name" placeholder="Name" required tabindex="1" />
       <input class="contact-input" type="email" v-model="email" placeholder="E-Mail" required tabindex="2" />
-      <textarea class="contact-input" v-model="nachricht" placeholder="Nachricht" required tabindex="3"></textarea>
+      <textarea class="contact-input" v-model="message" placeholder="Nachricht" required tabindex="3"></textarea>
       <button class="contact-button" type="submit" tabindex="4">Absenden</button>
     </form>
   </div>
@@ -17,7 +17,7 @@
 <script setup>
 import { useContactForm } from '~/composables/useContactForm.js'
 
-const { name, email, nachricht, erfolg, senden } = useContactForm()
+const { name, email, message, erfolg, senden } = useContactForm()
 </script>
 
 <style scoped>
