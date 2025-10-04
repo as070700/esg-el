@@ -15,7 +15,7 @@
       <li>Zusammenbauen</li>
       <li>Beratung</li>
     </ul>
-    <p>Sie möchten einen Termin? <nuxt-link to="/booking">Hier klicken</nuxt-link></p>
+    <p>Sie möchten einen Termin? <nuxt-link to="/request">Hier klicken</nuxt-link></p>
     <p>Sie haben Fragen? <nuxt-link to="/contact">Hier klicken</nuxt-link></p>
   </div>
 </template>

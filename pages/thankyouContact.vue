@@ -10,7 +10,7 @@
     <p></p>
     <NuxtLink to="/contact">Neuen Kontaktanfrage</NuxtLink>
     <p></p>
-    <NuxtLink to="/booking">Termin buchen</NuxtLink>
+    <NuxtLink to="/request">Termin buchen</NuxtLink>
     <p></p>
   </div>
 </template>

@@ -1,16 +1,16 @@
 // ----------------------------
-// Datei: pages/booking.vue
+// Datei: pages/request.vue
 // ----------------------------
 <template>
-  <div class="booking-container">
+  <div class="request-container">
     <h1>Termin buchen</h1>
-    <form @submit.prevent="senden" class="booking-form">
-      <input class="booking-input" type="text" v-model="name" placeholder="Vorname" required tabindex="1" />
-      <input class="booking-input" type="text" v-model="surname" placeholder="Nachname" required tabindex="2" />
-      <input class="booking-input" type="email" v-model="email" placeholder="E-Mail" required tabindex="3" />
-      <input class="booking-input" type="tel" v-model="phone" placeholder="Telefonnummer" required tabindex="4" />
-      <p>Wunschdatum:</p><input class="booking-input" type="date" placeholder="TT.MM.JJJJ" v-model="date" required tabindex="5" />
-      <select class="booking-input" v-model="serviceType" required tabindex="6">
+    <form @submit.prevent="senden" class="request-form">
+      <input class="request-input" type="text" v-model="name" placeholder="Vorname" required tabindex="1" />
+      <input class="request-input" type="text" v-model="surname" placeholder="Nachname" required tabindex="2" />
+      <input class="request-input" type="email" v-model="email" placeholder="E-Mail" required tabindex="3" />
+      <input class="request-input" type="tel" v-model="phone" placeholder="Telefonnummer" required tabindex="4" />
+      <p>Wunschdatum:</p><input class="request-input" type="date" placeholder="TT.MM.JJJJ" v-model="date" required tabindex="5" />
+      <select class="request-input" v-model="serviceType" required tabindex="6">
         <option value="" disabled>Art der Leistung wählen</option>
         <option value="Entrümpelung">Entrümpelung</option>
         <option value="Entsorgung">Entsorgung</option>
@@ -25,34 +25,34 @@
         <input type="checkbox" v-model="terms" required tabindex="7" />
         Ich akzeptiere die <NuxtLink to="/legalnotice">AGB</NuxtLink> und die <NuxtLink to="/privatypolice">Datenschutzerklärung</NuxtLink>.
       </label>
-      <button class="booking-button" type="submit" tabindex="8">Absenden</button>
+      <button class="request-button" type="submit" tabindex="8">Absenden</button>
     </form>
   </div>
 </template>
 
 <script setup>
-import { useBookingForm } from '~/composables/useBookingForm.js'
+import { useRequestForm } from '~/composables/useRequestForm.js'
 
-const { name, email, date, success, senden, serviceType } = useBookingForm()
+const { name, email, date, success, senden, serviceType } = useRequestForm()
 </script>
 
 <style scoped>
-.booking-container {
+.request-container {
   text-align: center;
   margin-top: 50px;
 }
 
-.booking-form {
+.request-form {
   max-width: 700px;
   margin: 40px auto;
   padding: 0 10px;
 }
 
-.booking-input {
+.request-input {
   margin-bottom: 10px;
 }
 
-select.booking-input {
+select.request-input {
   width: 100%;
   min-width: 200px;
   max-width: 400px;
@@ -64,7 +64,7 @@ select.booking-input {
   box-sizing: border-box;
 }
 
-.booking-button {
+.request-button {
   background-color: #1a4e8a;
   color: white;
   padding: 10px 20px;
@@ -77,7 +77,7 @@ select.booking-input {
   max-width: 400px;
 }
 
-.booking-button:hover {
+.request-button:hover {
   background-color: #20436a;
 }
 
@@ -96,13 +96,13 @@ select.booking-input {
 
 /* Mobile Styles */
 @media (max-width: 600px) {
-  .booking-form {
+  .request-form {
     max-width: 100%;
     padding: 0 5px;
   }
-  .booking-input,
-  select.booking-input,
-  .booking-button {
+  .request-input,
+  select.request-input,
+  .request-button {
     width: 100%;
     min-width: unset;
     max-width: unset;

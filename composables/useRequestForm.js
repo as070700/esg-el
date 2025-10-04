@@ -1,7 +1,7 @@
 import { ref } from 'vue'
 import emailjs from '@emailjs/browser'
 
-export function useBookingForm() {
+export function useRequestForm() {
   const name = ref('')
   const surname = ref('')
   const email = ref('')
@@ -29,7 +29,7 @@ export function useBookingForm() {
       )
       console.log(result)
       success.value = true
-      window.location.href = 'https://esg-el.de/thankyouBooking'
+      window.location.href = 'https://esg-el.de/thankyouRequest'
     } catch (error) {
       success.value = false
       console.log('Fehler beim Versenden:', error)

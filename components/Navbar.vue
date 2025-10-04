@@ -5,7 +5,7 @@
 
     <!-- Desktop-Menü -->
     <ul class="nav-links" :class="{ open: isOpen }">
-      <NuxtLink to="/booking">Buchen</NuxtLink>
+      <NuxtLink to="/request">Anfragen</NuxtLink>
       <NuxtLink to="/contact">Kontakt</NuxtLink>
       <NuxtLink to="/leichtesprache" aria-label="Zur Seite in Leichter Sprache">Leichte Sprache</NuxtLink>
     </ul>
