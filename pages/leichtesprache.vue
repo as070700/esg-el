@@ -1,14 +1,19 @@
 <template>
   <div class="leichtesprache">
-    <h1>Willkommen bei ESG - EL in Leichter Sprache</h1>
-    <p>Wir helfen Ihnen beim Aufräumen und Umziehen.</p>
-    <p>Sie können uns anrufen oder eine Nachricht schreiben.</p>
+    <h1>Willkommen bei ESG - EL!</h1>
+    <p>Wir helfen Ihnen beim Aufräumen.</p>
+    <p>Sie können schnell einen Termin machen.</p>
+    <p>Bei Fragen können Sie uns anrufen.</p>
+    <p>Unsere Dienste:</p>
     <ul>
-      <li>Wir räumen Ihre Wohnung oder Ihr Haus aus.</li>
-      <li>Wir bringen Sachen weg, die Sie nicht mehr brauchen.</li>
-      <li>Wir machen sauber.</li>
-      <li>Wir helfen beim Umzug.</li>
-      <li>Wir beraten Sie gerne.</li>
+      <li>Aufräumen</li>
+      <li>Wegwerfen von Sachen</li>
+      <li>Saubermachen</li>
+      <li>Umzüge</li>
+      <li>Auflösen von Wohnungen</li>
+      <li>Transport</li>
+      <li>Zusammenbauen</li>
+      <li>Beratung</li>
     </ul>
     <p>Sie möchten einen Termin? <nuxt-link to="/booking">Hier klicken</nuxt-link></p>
     <p>Sie haben Fragen? <nuxt-link to="/contact">Hier klicken</nuxt-link></p>
