@@ -8,7 +8,7 @@
     <p>Sie bekommen in Kürze eine Bestätigungsmail. Bitte schauen Sie zusätzlich im Spam-Ordner nach.</p>
     <NuxtLink to="/">Zur Startseite</NuxtLink>
     <p></p>
-    <NuxtLink to="/request">Neuen Termin buchen</NuxtLink>
+    <NuxtLink to="/request">Neuen Termin anfragen</NuxtLink>
     <p></p>
     <NuxtLink to="/contact">Kontakt</NuxtLink>
     <p></p>

@@ -8,8 +8,8 @@
   </div>
 
   <div class="links">
-    <p>Hier können Sie schnell und einfach einen Termin buchen.</p>
-    <nuxt-link to="/request">Termin buchen</nuxt-link>
+    <p>Hier können Sie schnell und einfach einen Termin anfragen.</p>
+    <nuxt-link to="/request">Termin anfragen</nuxt-link>
     <br>
     <p>Bei Fragen stehen wir Ihnen gerne zur Verfügung.</p>
     <nuxt-link to="/contact">Kontakt</nuxt-link>

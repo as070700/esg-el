@@ -3,7 +3,7 @@
 // ----------------------------
 <template>
   <div class="request-container">
-    <h1>Termin buchen</h1>
+    <h1>Termin anfragen</h1>
     <form @submit.prevent="senden" class="request-form">
       <input class="request-input" type="text" v-model="name" placeholder="Vorname" required tabindex="1" />
       <input class="request-input" type="text" v-model="surname" placeholder="Nachname" required tabindex="2" />
