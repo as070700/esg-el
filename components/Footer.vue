@@ -2,10 +2,16 @@
 // Datei: components/Footer.vue
 // ----------------------------
 <template>
+  <!-- Footer: zentrale Fußzeile mit Kontakt- und Rechtslinks -->
   <footer>
+    <!-- Copyright und Slogan -->
     <p>&copy; 2025 ESG - einfach, schnell und günstig</p>
+
+    <!-- Kurzer Hinweis zu Rechten -->
     <p>Alle Rechte vorbehalten.</p>
+
     <div class="footer-links">
+      <!-- Kontakt- und rechtliche Links (Mailto und interne Seiten) -->
       <p class="footer-info">
         <a href="mailto:info@esg-el.de">info@esg-el.de</a>
         | <a href="/legalnotice"> Impressum </a>
@@ -16,6 +22,7 @@
 </template>
 
 <style scoped>
+/* Styles für die Footer-Darstellung: Hintergrund, Textfarbe und Layout */
 
 footer {
   width: 100%;

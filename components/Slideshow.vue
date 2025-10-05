@@ -1,10 +1,13 @@
 <template>
+  <!-- Slideshow-Container: umschließt alle Slide-Elemente -->
   <div class="slideshow-container" ref="container">
+    <!-- Jede Slide enthält ein Bild; v-for erzeugt die Folien -->
     <div v-for="(image, index) in images" 
          :key="index" 
          class="slide"
          ref="slideEls"
-         style="display: none;">
+         style="display: none;"> <!-- Start verborgen, wird von JS sichtbar geschaltet -->
+      <!-- Bild: src und alt aus dem images-Array -->
       <img :src="image.src" :alt="image.alt" class="slideshow-img" />
     </div>
   </div>
@@ -14,9 +17,13 @@
 import { onMounted, ref, nextTick } from 'vue'
 import { initSlideshow } from '@/composables/slideshow.js'
 
+// Refs:
+// - slideEls: Referenzen auf die einzelnen Slide-Elemente (DOM-Elemente)
+// - container: Wrapper-Element für die Slideshow (z.B. für Navigation/Größenberechnung)
 const slideEls = ref([])
 const container = ref(null)
 
+// Bilddaten: src-Pfade und aussagekräftige alt-Texte für Barrierefreiheit
 const images = [
   { src: "/slides/alicia-christin-gerald-umzug_fenster_unsplash.jpg", alt: "Person beim Umzug am Fenster" },
   { src: "/slides/chuttersnap--lkw-unsplash.jpg", alt: "LKW auf der Straße" },
@@ -26,12 +33,15 @@ const images = [
 ];
 
 onMounted(async () => {
-  await nextTick() // sicherstellen, dass DOM gerendert ist
+  // Sicherstellen, dass DOM gerendert ist, bevor wir die Slides initialisieren
+  await nextTick()
+  // Externe Initialisierungs-Funktion im Composable aufrufen
   initSlideshow(slideEls.value, container.value)
 })
 </script>
 
 <style scoped>
+/* Styles für die Slideshow: Container, Slides und responsive Anpassung */
 .slideshow-container {
   width: 700px;
   height: 300px;

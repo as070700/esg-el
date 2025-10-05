@@ -1,16 +1,16 @@
 <template>
   <nav class="navbar">
-    <!-- Logo -->
+    <!-- Logo: klickbar, führt zur Startseite -->
     <NuxtLink to="/"><img src="/esg_logo.jpg" alt="ESG Logo" class="logo"></NuxtLink> 
 
-    <!-- Desktop-Menü -->
+    <!-- Desktop-Menü: Hauptnavigationslinks -->
     <ul class="nav-links" :class="{ open: isOpen }">
       <NuxtLink to="/request">Anfragen</NuxtLink>
       <NuxtLink to="/contact">Kontakt</NuxtLink>
       <NuxtLink to="/leichtesprache" aria-label="Zur Seite in Leichter Sprache">Leichte Sprache</NuxtLink>
     </ul>
 
-    <!-- Hamburger-Icon (nur mobil sichtbar) -->
+    <!-- Hamburger-Icon für mobile Ansicht: toggelt das Menü -->
     <div class="hamburger" :class="{ active: isOpen }" @click="toggleMenu">
       <span></span>
       <span></span>
@@ -22,14 +22,18 @@
 <script setup>
 import { ref } from 'vue';
 
+// Reactive flag: ob das mobile Menü geöffnet ist
 const isOpen = ref(false);
 
+// Funktion zum Umschalten des Menüzustands (auf/zu)
 function toggleMenu() {
   isOpen.value = !isOpen.value;
 }
 </script>
 
 <style scoped>
+/* Styles für die Navigationsleiste: Layout, Desktop-Menü und mobile Darstellung */
+
 /* === Allgemein === */
 .navbar {
   display: flex;

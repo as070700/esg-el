@@ -2,12 +2,17 @@
 // Datei: pages/index.vue
 // ----------------------------
 <template>
+  <!-- Startseiten-Bereich: Titel und kurze Beschreibung -->
   <div class="welcome">
+    <!-- Wichtig: Haupttitel der Startseite (SEO-relevant) -->
     <h1>Willkommen bei ESG - EL</h1>
+    <!-- Kurzbeschreibung / USP -->
     <p>Ihr Partner für Entrümpelung: einfach, schnell und günstig.</p>
   </div>
 
+  <!-- Schnellnavigation: Anfrage & Kontakt -->
   <div class="links">
+    <!-- Hinweis: nuxt-link verwendet für clientseitige Navigation -->
     <p>Hier können Sie schnell und einfach einen Termin anfragen.</p>
     <nuxt-link to="/request">Termin anfragen</nuxt-link>
     <br>
@@ -15,11 +20,14 @@
     <nuxt-link to="/contact">Kontakt</nuxt-link>
   </div>
 
+  <!-- Slideshow: visuelle Vorstellung (Komponente wird im Script importiert) -->
   <div class="slideshow-container">
     <Slideshow />
   </div>
 
+  <!-- Dienstleistungen: Liste der angebotenen Services -->
   <div class="services">
+    <!-- Hinweis: diese Liste beschreibt Kernangebote — ggf. Links zu Detailseiten hinzufügen -->
     <h2>Unsere Dienstleistungen</h2>
     <ul>
       <li>Entrümpelung</li>
@@ -36,6 +44,7 @@
 
 <script setup>
 import Slideshow from '~/components/Slideshow.vue'
+/* Hinweis: Slideshow-Komponente wird oben verwendet. */
 </script>
 
 <style scoped>

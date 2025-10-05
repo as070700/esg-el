@@ -1,11 +1,17 @@
 <template>
   <div class="leichtesprache">
+    <!-- Hauptüberschrift: Begrüßung in einfacher Sprache -->
     <h1>Willkommen bei ESG - EL!</h1>
+
+    <!-- Kurzbeschreibung: was die Seite/das Angebot macht -->
     <p>Wir helfen Ihnen beim Aufräumen.</p>
     <p>Sie können schnell einen Termin machen.</p>
     <p>Bei Fragen können Sie uns anrufen.</p>
+
+    <!-- Liste der angebotenen Leistungen in einfacher Sprache -->
     <p>Unsere Dienste:</p>
     <ul>
+      <!-- Serviceeinträge: klare, einfache Formulierungen -->
       <li>Aufräumen</li>
       <li>Wegwerfen von Sachen</li>
       <li>Saubermachen</li>
@@ -15,13 +21,15 @@
       <li>Zusammenbauen</li>
       <li>Beratung</li>
     </ul>
+
+    <!-- Navigation: direkte Links zu Anfrage und Kontakt -->
     <p>Sie möchten einen Termin? <nuxt-link to="/request">Hier klicken</nuxt-link></p>
     <p>Sie haben Fragen? <nuxt-link to="/contact">Hier klicken</nuxt-link></p>
   </div>
 </template>
 
 <script setup>
-// Kein spezielles Script benötigt
+//Kein spezielles Script benötigt
 </script>
 
 <style scoped>

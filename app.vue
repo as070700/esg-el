@@ -3,9 +3,9 @@
 
 /pages
   |-- index.vue           // Startseite
-  |-- services.vue        // Leistungen
-  |-- request.vue        // Terminbuchung mit Formular
+  |-- request.vue         // Terminbuchung mit Formular
   |-- contact.vue         // Kontaktformular
+  |-- leichtesprache.vue  // Seite in leichter Sprache
   |-- legalnotice.vue     // Impressum
   |-- privatypolice.vue   // Datenschutz
   |-- agb.vue             // AGB

@@ -3,13 +3,24 @@
 // ----------------------------
 <template>
   <div class="contact-container">
+    <!-- Wichtig: Seitenüberschrift für Kontakt -->
     <h1>Kontakt</h1>
+    <!-- Kurzer Hinweis zur Funktion der Seite -->
     <p>Sie haben Fragen? Schreiben Sie uns.</p>
+
+    <!-- Formular: hier wird die Senden-Funktion des Composables aufgerufen -->
     <form @submit.prevent="senden" class="contact-form">
+      <!-- Feld: Name (erforderlich) -->
       <input class="contact-input" type="text" v-model="name" placeholder="Name" required tabindex="1" />
+      <!-- Feld: E-Mail (wichtig für Rückmeldung) -->
       <input class="contact-input" type="email" v-model="email" placeholder="E-Mail" required tabindex="2" />
+      <!-- Feld: Nachricht (ausführlicher Text) -->
       <textarea class="contact-input" v-model="message" placeholder="Nachricht" required tabindex="3"></textarea>
+
+      <!-- Button: löst die Aktion 'senden' aus; tabindex für Tastatur-Navigation -->
       <button class="contact-button" type="submit" tabindex="4">Absenden</button>
+
+      <!-- Beispielplatzhalter: <p v-if="erfolg">Vielen Dank, Ihre Nachricht wurde gesendet.</p> -->
     </form>
   </div>
 </template>
@@ -17,6 +28,10 @@
 <script setup>
 import { useContactForm } from '~/composables/useContactForm.js'
 
+/* Wichtig: useContactForm liefert reactive refs und die senden-Funktion.
+   - name, email, message: Bindings für die Eingabefelder
+   - erfolg: optionaler Indikator für erfolgreichen Versand
+   - senden(): wird beim Submit aufgerufen      */
 const { name, email, message, erfolg, senden } = useContactForm()
 </script>
 

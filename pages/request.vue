@@ -3,13 +3,27 @@
 // ----------------------------
 <template>
   <div class="request-container">
+    <!-- Seitenüberschrift: Anfrageformular für Termine -->
     <h1>Termin anfragen</h1>
+
+    <!-- Formular: verhindert Default-Submit und ruft 'senden' aus Composable auf -->
     <form @submit.prevent="senden" class="request-form">
+      <!-- Vorname: Pflichtfeld -->
       <input class="request-input" type="text" v-model="name" placeholder="Vorname" required tabindex="1" />
+
+      <!-- Nachname: Pflichtfeld -->
       <input class="request-input" type="text" v-model="surname" placeholder="Nachname" required tabindex="2" />
+
+      <!-- E‑Mail: für Rückmeldung erforderlich -->
       <input class="request-input" type="email" v-model="email" placeholder="E-Mail" required tabindex="3" />
+
+      <!-- Telefonnummer: Kontaktmöglichkeit -->
       <input class="request-input" type="tel" v-model="phone" placeholder="Telefonnummer" required tabindex="4" />
+
+      <!-- Wunschdatum: Datumsauswahl für Termin -->
       <p>Wunschdatum:</p><input class="request-input" type="date" placeholder="TT.MM.JJJJ" v-model="date" required tabindex="5" />
+
+      <!-- Auswahl: Art der gewünschten Leistung -->
       <select class="request-input" v-model="serviceType" required tabindex="6">
         <option value="" disabled>Art der Leistung wählen</option>
         <option value="Entrümpelung">Entrümpelung</option>
@@ -21,16 +35,21 @@
         <option value="Montageservice">Montageservice</option>
         <option value="Beratung und Planung">Beratung und Planung</option>
       </select>
+
+      <!-- Checkbox: Einwilligung in AGB und Datenschutz (erforderlich) -->
       <label class="agb-label">
         <input type="checkbox" v-model="terms" required tabindex="7" />
         Ich akzeptiere die <NuxtLink to="/legalnotice">AGB</NuxtLink> und die <NuxtLink to="/privatypolice">Datenschutzerklärung</NuxtLink>.
       </label>
+
+      <!-- Absenden: löst 'senden' im Composable aus -->
       <button class="request-button" type="submit" tabindex="8">Absenden</button>
     </form>
   </div>
 </template>
 
 <script setup>
+/* Import des Composables: liefert reactive refs für Formularfelder und die senden-Funktion */
 import { useRequestForm } from '~/composables/useRequestForm.js'
 
 const { name, surname, email, phone, date, serviceType, success, senden } = useRequestForm()

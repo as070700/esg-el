@@ -2,21 +2,33 @@
 // Datei: components/CookieBanner.vue
 // ----------------------------
 <template>
+  <!-- Cookie-Banner: erscheint, wenn noch keine Zustimmung im localStorage vorhanden ist -->
   <div v-if="!consentGiven" class="cookie-banner">
+    <!-- Kurzer Hinweistext zum Zweck der Cookies -->
     <p>Wir verwenden Cookies, um Ihre Erfahrung zu verbessern. Bitte wählen Sie, welche Cookies Sie erlauben möchten.</p>
+
+    <!-- Aktionsbuttons: Auswahlmöglichkeiten für Nutzer -->
     <div class="cookie-actions">
+      <!-- Nur notwendige Cookies akzeptieren -->
       <button @click="acceptEssential">Nur notwendige</button>
+      <!-- Alle Cookies akzeptieren -->
       <button @click="acceptAll">Alle akzeptieren</button>
+      <!-- Anzeige der erweiterten Einstellungen umschalten -->
       <button class="settings" @click="showSettings = !showSettings">Einstellungen</button>
     </div>
+
+    <!-- Erweiterte Einstellungen: steuerbar per showSettings -->
     <div v-if="showSettings" class="cookie-settings">
       <p><strong>Cookie-Einstellungen (Platzhalter):</strong></p>
+      <!-- Notwendige Cookies: immer aktiv -->
       <label>
         <input type="checkbox" checked disabled /> Notwendige Cookies (immer aktiv)
       </label>
+      <!-- Analytics-Opt-In -->
       <label>
         <input type="checkbox" v-model="analytics" /> Statistik / Analyse Cookies
       </label>
+      <!-- Speichert die Einstellungen in localStorage -->
       <button @click="saveSettings">Speichern</button>
     </div>
   </div>
@@ -25,25 +37,33 @@
 <script setup>
 import { ref, onMounted } from 'vue';
 
+/* Reactive Flags:
+     - consentGiven: ob bereits Zustimmungsdaten vorhanden sind
+     - showSettings: Steuerung der Sichtbarkeit des Einstellungsbereichs
+     - analytics: Auswahl für Analyse-Cookies */
 const consentGiven = ref(false);
 const showSettings = ref(false);
 const analytics = ref(false);
 
 onMounted(() => {
+  // Prüfen, ob bereits eine Zustimmung gespeichert ist (localStorage)
   consentGiven.value = localStorage.getItem('cookieConsent') !== null;
 });
 
 function acceptEssential() {
+  // Nur essentielle Cookies akzeptieren und Zustimmung speichern
   localStorage.setItem('cookieConsent', JSON.stringify({ essential: true, analytics: false }));
   consentGiven.value = true;
 }
 
 function acceptAll() {
+  // Alle Cookies akzeptieren und Zustimmung speichern
   localStorage.setItem('cookieConsent', JSON.stringify({ essential: true, analytics: true }));
   consentGiven.value = true;
 }
 
 function saveSettings() {
+  // Benutzerdefinierte Einstellungen speichern (essential = true immer)
   localStorage.setItem('cookieConsent', JSON.stringify({ essential: true, analytics: analytics.value }));
   consentGiven.value = true;
 }

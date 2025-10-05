@@ -1,36 +1,47 @@
+/* Grundlegende Schriftfamilie für die gesamte Seite */
 body {
   font-family: 'DM Sans', sans-serif;
 }
 
+/* Primäre Überschrift (Hauptseiten-Titel) — Größe und Hauptfarbe */
 h1 {
   font-size: 2rem;
   color: #27549d;
 }
 
+/* Sekundäre Überschriften (Abschnitts-Titel) */
 h2 {
   font-size: 1.5rem;
   color: #40649e;
 }
 
+/* Kleinere Überschriften */
 h3 {
   font-size: 1.25rem;
   color: #55719d;
 }
 
+/* Standard-Absatztext: Lesbarkeit und Grundfarbe */
 p {
   font-size: 1rem;
   color: #000000;
 }
 
+/* Links: Farbe und optisches Verhalten (keine Unterstreichung standardmäßig) */
 a {
   color: #336198;
   text-decoration: none;
 }
 
+/* Listen: Abstand zwischen Einträgen für bessere Lesbarkeit */
 li {
   margin-bottom: 0.5rem;
 }
 
+/* Formular-Elemente: gemeinsame Basis für Inputs und Textareas
+   - Border/Radius für einheitliches Aussehen
+   - Padding und Box-Sizing für konsistente Breitenberechnung
+   - font-family erbt die Seite */
 input,
 textarea {
   border: 1px solid #ccc;
