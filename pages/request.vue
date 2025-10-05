@@ -33,7 +33,7 @@
 <script setup>
 import { useRequestForm } from '~/composables/useRequestForm.js'
 
-const { name, email, date, success, senden, serviceType } = useRequestForm()
+const { name, surname, email, phone, date, serviceType, success, senden } = useRequestForm()
 </script>
 
 <style scoped>
