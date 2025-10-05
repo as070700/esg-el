@@ -109,13 +109,13 @@ button {
   font-size: 1em;
 }
 button.settings {
-  background: #888;
+  background: #7d7d7d;
 }
 button:hover {
   background: linear-gradient(90deg, #20436a 60%, #305176 100%);
 }
 .cookie-settings {
-  background: #222;
+  background: #5e5e5e;
   color: #fff;
   border-radius: 10px;
   padding: 1rem;
